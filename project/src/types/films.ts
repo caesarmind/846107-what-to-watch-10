@@ -1,4 +1,4 @@
-export type Films = {
+export type Film = {
     id: number,
     title: string,
     genre: string,
@@ -8,3 +8,6 @@ export type Films = {
     poster: string,
     src: string,
 };
+
+export type Films = Film[];
+

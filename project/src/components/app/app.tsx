@@ -8,15 +8,18 @@ import Signin from '../../pages/sign-in/sign-in';
 import Page404 from '../../pages/404/404';
 import AddReview from '../../pages/add-review/add-review';
 import { AppRoute, AuthorizationStatus } from '../../consts';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import PrivateRoute from '../private-route/private-route';
+import { Films } from '../../types/films';
 
+type AppProps = {
+  films: Films;
+};
+function App({films}:AppProps): JSX.Element {
 
-function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={AppRoute.Main} element={<Main promoTitle = {'The GRAND BUDAPEST'} promoGenre = {'DRAMA'} promoDate = {2021}/>} />
+        <Route path={AppRoute.Main} element={<Main promoTitle = {films[1].title} promoGenre = {'DRAMA'} promoDate = {2021}/>} />
         <Route path={AppRoute.Signin} element={<Signin />} />
         <Route path={AppRoute.MyList}
           element={
