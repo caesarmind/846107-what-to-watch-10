@@ -1,4 +1,4 @@
-import BlankSVG from "../../components/blank-svg/blank-svg";
+import BlankSVG from '../../components/blank-svg/blank-svg';
 
 function Signin():JSX.Element {
   return (
