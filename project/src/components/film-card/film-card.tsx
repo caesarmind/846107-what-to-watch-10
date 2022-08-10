@@ -1,11 +1,16 @@
-function FilmCard(): JSX.Element {
+type FilmCardProps = {
+  key: string,
+  poster: string,
+  title: string,
+};
+function FilmCard({key, poster, title}:FilmCardProps): JSX.Element {
   return (
-    <article className="small-film-card catalog__films-card">
+    <article key={key} className="small-film-card catalog__films-card">
       <div className="small-film-card__image">
-        <img src="img/bohemian-rhapsody.jpg" alt="Bohemian Rhapsody" width="280" height="175" />
+        <img src={poster} alt={title} width={280} height={175} />
       </div>
       <h3 className="small-film-card__title">
-        <a className="small-film-card__link" href="film-page.html">Bohemian Rhapsody</a>
+        <a className="small-film-card__link" href="film-page.html">{title}</a>
       </h3>
     </article>
   );

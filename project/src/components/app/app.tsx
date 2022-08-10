@@ -19,7 +19,7 @@ function App({films}:AppProps): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={AppRoute.Main} element={<Main promoTitle = {films[1].title} promoGenre = {'DRAMA'} promoDate = {2021}/>} />
+        <Route path={AppRoute.Main} element={<Main films={films} />} />
         <Route path={AppRoute.Signin} element={<Signin />} />
         <Route path={AppRoute.MyList}
           element={
@@ -28,7 +28,7 @@ function App({films}:AppProps): JSX.Element {
             </PrivateRoute>
           }
         />
-        <Route path={AppRoute.Films} element={<MoviePage />} />
+        <Route path={AppRoute.Films} element={<MoviePage films={films}/>} />
         <Route path={AppRoute.AddReview} element={<AddReview />}/>
         <Route path={AppRoute.Player} element={<Player/>} />
         <Route path='*' element={<Page404 />} />

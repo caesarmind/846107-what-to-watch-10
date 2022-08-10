@@ -8,7 +8,7 @@ export const films: Films = [
     year: '2014',
     director: 'Wes Anderson',
     actors: ['Bill Murray', 'Edward Norton', 'Jude Law', 'Willem Dafoe'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/the-grand-budapest-hotel-poster.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
@@ -18,7 +18,7 @@ export const films: Films = [
     year: '2020',
     director: 'Tin Lanister',
     actors: ['Johny Depp', 'Roberd Down Jr.', 'Matthew Mcconaughy'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/bohemian-rhapsody.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
@@ -28,17 +28,17 @@ export const films: Films = [
     year: '2008',
     director: 'Wes Anderson',
     actors: ['Bill Murray', 'Edward Norton', 'Jude Law', 'Willem Dafoe'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/macbeth.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
     id: 44,
-    title: 'The Grand Budapest',
-    genre: 'drama',
-    year: '2014',
-    director: 'Wes Anderson',
-    actors: ['Bill Murray', 'Edward Norton', 'Jude Law', 'Willem Dafoe'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    title: 'Pulp Fiction',
+    genre: 'Thriler',
+    year: '2002',
+    director: 'Quentin Tarantino',
+    actors: ['Uma Turman', 'Edward Norton', 'Emily Clarke'],
+    poster: 'img/pulp-fiction.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
@@ -48,7 +48,7 @@ export const films: Films = [
     year: '2011',
     director: 'Wes Anderson',
     actors: ['Bradd Pitt', 'Sharon Stones'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/snatch.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
@@ -58,7 +58,7 @@ export const films: Films = [
     year: '1996',
     director: 'Wes Anderson',
     actors: ['Alen Delone', 'Mickey Rurk', 'Izabel Ajan', 'Willem Dafoe'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/revenant.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
@@ -68,7 +68,7 @@ export const films: Films = [
     year: '1995',
     director: 'Wes Anderson',
     actors: ['Morgan Freeman', 'Hugh Lorry', 'Collin Farrel'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/moonrise-kingdom.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
@@ -78,7 +78,7 @@ export const films: Films = [
     year: '2014',
     director: 'Wes Anderson',
     actors: ['Roger Federer', 'Pamela Anderson', 'Roman Abramovich'],
-    poster: 'https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_.jpg',
+    poster: 'img/johnny-english.jpg',
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
 ];
