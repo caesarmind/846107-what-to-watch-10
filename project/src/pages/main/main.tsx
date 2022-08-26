@@ -1,17 +1,15 @@
-import FilmCard from '../../components/film-card/film-card';
 import PageFooter from '../../components/page-footer/page-footer';
-import GenreFilter from '../../components/genre-filter/genre-filter';
 import BlankSVG from '../../components/blank-svg/blank-svg';
 import Logo from '../../components/logo/logo';
+import { Films } from '../../types/films';
+import MovieCatalog from '../movie-catalog/movie-catalog';
 
 
-type FilmSpecs = {
-  promoTitle: string;
-  promoGenre: string;
-  promoDate: number;
-};
+type MoviePageProps = {
+  films:Films;
+}
 
-function Main(props: FilmSpecs): JSX.Element {
+function Main({films}: MoviePageProps): JSX.Element {
 
   return (
     <>
@@ -53,10 +51,10 @@ function Main(props: FilmSpecs): JSX.Element {
               />
             </div>
             <div className="film-card__desc">
-              <h2 className="film-card__title">{props.promoTitle}</h2>
+              <h2 className="film-card__title">The Grand Budapest</h2>
               <p className="film-card__meta">
-                <span className="film-card__genre">{props.promoGenre}</span>
-                <span className="film-card__year">{props.promoDate}</span>
+                <span className="film-card__genre">Drama</span>
+                <span className="film-card__year">2014</span>
               </p>
               <div className="film-card__buttons">
                 <button className="btn btn--play film-card__button" type="button">
@@ -78,38 +76,7 @@ function Main(props: FilmSpecs): JSX.Element {
         </div>
       </section>
       <div className="page-content">
-        <section className="catalog">
-          <GenreFilter />
-          <div className="catalog__films-list">
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-
-          </div>
-          <div className="catalog__more">
-            <button className="catalog__button" type="button">
-          Show more
-            </button>
-          </div>
-        </section>
+        <MovieCatalog films={films}/>
         <PageFooter/>
       </div>
     </>
