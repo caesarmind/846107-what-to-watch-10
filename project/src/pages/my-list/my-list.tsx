@@ -1,8 +1,21 @@
 import PageFooter from '../../components/page-footer/page-footer';
-import MyListCard from '../../components/my-list-card/my-list-card';
 import BlankSVG from '../../components/blank-svg/blank-svg';
+import FilmCard from '../../components/film-card/film-card';
+import { Films, Film } from '../../types/films';
+import { useState } from 'react';
 
-function MyList():JSX.Element {
+type MoviePageProps = {
+  films:Films;
+}
+function MyList({films}:MoviePageProps):JSX.Element {
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [choosenFilm, setChoosenFilm] = useState({});
+  const onSelectedFilmChange = ((film:Film) => {
+    setChoosenFilm(film);
+  }
+  );
+
   return(
     <>
       <BlankSVG />
@@ -23,14 +36,25 @@ function MyList():JSX.Element {
               </div>
             </li>
             <li className="user-block__item">
-              <a className="user-block__link">Sign out</a>
+              <a href="#signout" className="user-block__link">Sign out</a>
             </li>
           </ul>
         </header>
         <section className="catalog">
           <h2 className="catalog__title visually-hidden">Catalog</h2>
           <div className="catalog__films-list">
-            <MyListCard />
+            {
+              films.map((film) => {
+                const {id} = film;
+                return(
+                  <FilmCard
+                    key={id}
+                    film={film}
+                    onSubmit={onSelectedFilmChange}
+                  />
+                );
+              })
+            }
           </div>
         </section>
         <PageFooter />

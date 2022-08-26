@@ -2,7 +2,7 @@ import { Films } from '../types/films';
 
 export const films: Films = [
   {
-    id: 11,
+    id: '11',
     title: 'The Grand Budapest',
     genre: 'comedy',
     year: '2014',
@@ -12,7 +12,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 22,
+    id: '22',
     title: 'Bohemian Rhapsody',
     genre: 'drama',
     year: '2020',
@@ -22,7 +22,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 33,
+    id: '33',
     title: 'Macbeth',
     genre: 'music',
     year: '2008',
@@ -32,7 +32,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 44,
+    id: '44',
     title: 'Pulp Fiction',
     genre: 'Thriler',
     year: '2002',
@@ -42,7 +42,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 55,
+    id: '55',
     title: 'Moneyball',
     genre: 'sport',
     year: '2011',
@@ -52,7 +52,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 66,
+    id: '66',
     title: 'Once upon a time in America',
     genre: 'drama',
     year: '1996',
@@ -62,7 +62,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 77,
+    id: '77',
     title: 'Showanshak redemtpion',
     genre: 'drama',
     year: '1995',
@@ -72,7 +72,7 @@ export const films: Films = [
     src: 'https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4',
   },
   {
-    id: 88,
+    id: '88',
     title: 'Code of Davinchi',
     genre: 'thriler',
     year: '2014',

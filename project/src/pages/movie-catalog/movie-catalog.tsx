@@ -1,22 +1,34 @@
 import GenreFilter from '../../components/genre-filter/genre-filter';
 import FilmCard from '../../components/film-card/film-card';
-import { Films } from '../../types/films';
+import { Film, Films } from '../../types/films';
+import { useState} from 'react';
 type MoviePageProps = {
   films:Films;
 }
+
 function MovieCatalog({films}:MoviePageProps): JSX.Element {
-  return(
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [choosenFilm, setChoosenFilm] = useState({});
+  const onSelectedFilmChange = ((film:Film) => {
+    setChoosenFilm(film);
+  }
+  );
+
+
+  return (
     <section className="catalog">
       <GenreFilter />
       <div className="catalog__films-list">
         {
           films.map((film) => {
-            const {poster, title, id} = film;
-            const keyValue = `${id}-${title}`;
-
+            const {id} = film;
             return(
-              <FilmCard key={keyValue} poster={poster} title={title} />
-
+              <FilmCard
+                key={id}
+                film={film}
+                onSubmit={onSelectedFilmChange}
+              />
             );
           })
         }
